@@ -88,7 +88,7 @@ python main.py predict
 ### 3️⃣ Batch Prediction from CSV
 
 ```bash
-python main.py predict-batch data/new_reviews.csv
+python main.py predict-batch data/test_reviews.csv
 ```
 
 ---

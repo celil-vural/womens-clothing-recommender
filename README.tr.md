@@ -88,7 +88,7 @@ python main.py predict
 ### 3️⃣ CSV Dosyasından Toplu Tahmin
 
 ```bash
-python main.py predict-batch data/new_reviews.csv
+python main.py predict-batch data/test_reviews.csv
 ```
 
 ---

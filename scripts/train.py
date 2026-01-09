@@ -23,6 +23,8 @@ from sklearn.metrics import (
     precision_recall_fscore_support
 )
 
+# region paths
+
 # Add project root to Python path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
@@ -40,6 +42,7 @@ logger = logging.getLogger(__name__)
 IMAGES_DIR = Path("images")
 IMAGES_DIR.mkdir(exist_ok=True)
 
+# endregion paths
 
 def download_dataset() -> None:
     """Download the dataset from Kaggle if not already present."""

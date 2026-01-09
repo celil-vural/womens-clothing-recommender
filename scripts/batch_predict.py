@@ -54,7 +54,7 @@ def main(csv_path: str) -> None:
         df['Predicted_Recommendation'] = ['Recommended' if p == 1 else 'Not Recommended' for p in predictions]
         df['Recommendation_Probability'] = probabilities
 
-        output_file = "batch_predictions_output.csv"
+        output_file = "./data/batch_predictions_output.csv"
         df.to_csv(output_file, index=False)
         print(f"Success! Predictions saved to: {output_file}")
         print(f"Total reviews processed: {len(df)}")
